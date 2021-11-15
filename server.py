@@ -48,6 +48,8 @@ def say_hello():
           <br>
           <input type="submit" value="Submit">
         </form><form action="/diss">
+          What's your name? <input type="text" name="diss_person">
+          <br>
           <input type="submit" value="Diss Me" action='/diss'>
         </form>
       </body>
@@ -79,7 +81,7 @@ def greet_person():
 def diss():
     """Get user by name."""
 
-    player = request.args.get("person")
+    player = request.args.get("diss_person")
 
     diss = choice(DISS)
 
