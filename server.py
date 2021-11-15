@@ -50,7 +50,7 @@ def say_hello():
         </form><form action="/diss">
           What's your name? <input type="text" name="diss_person">
           <br>
-          <input type="submit" value="Diss Me" action='/diss'>
+          <input type="submit" value="Diss Me">
         </form>
       </body>
     </html>
